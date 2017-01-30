@@ -401,11 +401,11 @@ function makeEnemy(splitX,y,splitW,vel,index){//make a hoizontal bar with an ope
               else if(w>=2100) bWidth=55;
               if(w>2500){ //creating an extra bomb if the screen is wide enough
                 bombs[bombs.length]=makeBomb(Math.random()*(w-100)+25,0,Math.random()*3+3,bombXVel);
-                bombs[bombs.length].width=bWidth;
+                bombs[bombs.length-1].width=bWidth;
               }
               //adding a bomb object
               bombs[bombs.length]=makeBomb(Math.random()*(w-100)+25,0,Math.random()*3+3,bombXVel);
-              bombs[bombs.length].width=bWidth;
+              bombs[bombs.length-1].width=bWidth;
             }
           }
 
